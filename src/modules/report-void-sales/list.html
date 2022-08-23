@@ -1,0 +1,60 @@
+<template>
+    <au-input-form title.bind="title" with.bind="context">
+      <style>
+          table>tbody>tr>td {
+              white-space: pre;
+          }
+      </style>
+  
+  <h1 class="page-header">Laporan Void Penjualan</h1>
+  <form class="form-horizontal">
+           
+    <datepicker label="From" value.bind="data.filter.dateFrom" error.bind="error.filter.dateFrom" read-only.bind="(readOnly)"></datepicker>
+    <datepicker label="To" value.bind="data.filter.dateTo" error.bind="error.filter.dateTo" read-only.bind="(readOnly)"></datepicker>
+    <dropdown label="Shift" error.bind="error.filter.shift" value.bind="shift" items.bind="shifts" change.delegate="setShift($event)"></dropdown>
+    <div class="btn-group col-sm-12">
+        <button class="btn btn-success pull-right" click.delegate="filter()">Tampilkan</button>
+    </div>
+
+    <br>
+  </br>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover" border="1" id="myTable">
+          <thead align="center">
+              <tr>
+                <td>Tanggal</td>
+                <td>Nomor Transaksi</td>
+                <td>Barcode</td>
+                <td>Nama Barang</td>
+                <td>Size</td>
+                <td>Kuantitas</td>
+                <td>Toko</td>
+                <td>Kasir</td>
+                <td>Shift</td>
+                <td>Di Void oleh</td>
+              </tr>
+          </thead>
+          <tbody>
+              <require from="../../lib/number-format-value-converter"></require>
+              <tr repeat.for="item of data.results">
+                  <td class="text-center">${item.date}</td>
+                    <td class="text-center">${item.code}</td>
+                    <td class="text-right">${item.ItemCode}</td>
+                    <td class="text-center">${item.ItemName}</td>
+                    <td class="text-center">${item.ItemSize}</td>
+                    <td class="text-right">${item.Quantity}</td>
+                    <td class="text-right">${item.storeName}</td>
+                    <td class="text-right">${item._createdBy}</td> 
+                    <td class="text-right">${item.shift}</td>
+                    <td class="text-right">${item._updatedBy}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <div class="alert alert-info text-center" role="alert" if.bind="data.length === 0">
+    Tidak ada data.
+  </div>
+  <hr/>
+    </au-input-form>
+    <div class="row"></div>
+  </template>
