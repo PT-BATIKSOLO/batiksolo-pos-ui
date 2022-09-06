@@ -18,10 +18,10 @@ export async function configure(aurelia) {
     .standardConfiguration()
     .feature("components")
     .plugin("aurelia-api", (config) => {
-      var auth = "https://com-batiksolo-service-auth-uat.azurewebsites.net/v1/";
-      var core = "https://com-batiksolo-service-core-uat.azurewebsites.net/v1/";
-      var pos = "https://com-batiksolo-service-pos-uat.azurewebsites.net/v1/";
-      var inventory = "https://com-batiksolo-service-warehouse-uat.azurewebsites.net/v1/";
+      var auth = "https://com-batiksolo-service-auth.azurewebsites.net/v1/";
+      var core = "https://com-batiksolo-service-core.azurewebsites.net/v1/";
+      var pos = "https://com-batiksolo-service-pos.azurewebsites.net/v1/";
+      var inventory = "https://com-batiksolo-service-warehouse.azurewebsites.net/v1/";
 
       config.registerEndpoint("auth", auth);
       config.registerEndpoint("core", core);
