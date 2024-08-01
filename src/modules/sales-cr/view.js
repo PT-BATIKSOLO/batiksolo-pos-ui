@@ -271,13 +271,13 @@ export class View {
         this.printStruk += "        <td colspan='3' class='text-left'> PT. TABOR ANDALAN RETAILINDO </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
-        this.printStruk += "        <td colspan='3' class='text-left'> EQUITY TOWER 15C JL JEND SUDIRMAN KAV. 52-53 </td>";
+        this.printStruk += "        <td colspan='3' class='text-left'> Jln Merapi No. 23 RT. 000 RW. 000 Banaran, </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
-        this.printStruk += "        <td colspan='3' class='text-left'> SENAYAN KEBAYORAN BARU </td>";
+        this.printStruk += "        <td colspan='3' class='text-left'> Grogol Kab. Sukoharjo Jawa Tengah </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
-        this.printStruk += "        <td colspan='3' class='text-left'> JAKARTA SELATAN DKI JAKARTA </td>";
+        this.printStruk += "        <td colspan='3' class='text-left'> Tlp. (0271) 719911 </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
         this.printStruk += "        <td colspan='3' class='text-left'> No. NPWP: 71.157.388.1-451.000 </td>";
