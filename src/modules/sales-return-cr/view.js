@@ -328,7 +328,7 @@ export class View {
         this.printStruk += "        <td colspan='3' class='text-left'> Banaran, Grogol, Sukoharjo </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
-        this.printStruk += "        <td colspan='3' class='text-left'>  Jawa Tengah, 57552 </td>";
+        this.printStruk += "        <td colspan='3' class='text-left'> Jawa Tengah, 57552 </td>";
         this.printStruk += "    </tr>";
         this.printStruk += "    <tr>";
         this.printStruk += "        <td colspan='3' class='text-left'> NPWP : 41.229.882.0-532.000 </td>";
